@@ -27,3 +27,11 @@ Run quick test:
 ```bash
 npm test
 ```
+
+Examples
+
+Run the jsonplaceholder examples (POST and GET):
+
+```bash
+node examples/typicode.js
+```
