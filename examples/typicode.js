@@ -20,6 +20,7 @@ async function getExample() {
     console.log('GET response data:', res.data);
   } catch (err) {
     console.error('GET error:', err.message);
+    // Note: jsonplaceholder returns 404 for non-existent posts, so this is expected for invalid IDs
   }
 }
 
@@ -27,6 +28,7 @@ async function run() {
   console.log('Running jsonplaceholder examples...');
   await postExample();
   await getExample();
+  // Note: To test error handling, you can modify the getExample URL to an invalid endpoint, e.g. 'https://jsonplaceholder.typicode.com/posts/9999'
 }
 
 if (require.main === module) run();
