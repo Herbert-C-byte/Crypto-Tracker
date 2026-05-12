@@ -10,6 +10,7 @@ async function postExample() {
     console.log('POST response data:', res.data);
   } catch (err) {
     console.error('POST error:', err.message);
+    // To see if it doesn't work
   }
 }
 
